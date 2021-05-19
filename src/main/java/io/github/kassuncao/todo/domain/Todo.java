@@ -34,9 +34,9 @@ public class Todo {
     private Long id;
     private String description;
     private Boolean done;
-    @JsonFormat(pattern = "dd-MM-yyyy HH:mm:SS")
+    @JsonFormat(pattern = "dd/MM/yyyy HH:mm:SS")
     private LocalDateTime createdDate;
-    @JsonFormat(pattern = "dd-MM-yyyy HH:mm:SS")
+    @JsonFormat(pattern = "dd/MM/yyyy HH:mm:SS")
     private LocalDateTime doneDate;
 
     public Todo () {
