@@ -8,6 +8,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 /**
  * 
  * DOCUMENTAÇÃO DA CLASSE <br>
@@ -32,7 +34,9 @@ public class Todo {
     private Long id;
     private String description;
     private Boolean done;
+    @JsonFormat(pattern = "dd-MM-yyyy HH:mm:SS")
     private LocalDateTime createdDate;
+    @JsonFormat(pattern = "dd-MM-yyyy HH:mm:SS")
     private LocalDateTime doneDate;
 
     public Todo () {
